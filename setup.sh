@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-export LINUX_VER=5.19
+export LINUX_VER=5.19.1
 export BUILDDIR=$(pwd)
 export KERNEL_DIR="$BUILDDIR/linux-$LINUX_VER"
 
