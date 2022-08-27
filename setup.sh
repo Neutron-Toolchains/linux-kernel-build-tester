@@ -5,9 +5,6 @@ export LINUX_VER="5.19.4"
 export BUILDDIR=$(pwd)
 export KERNEL_DIR="$BUILDDIR/linux-$LINUX_VER"
 
-pacman -Syy
-pacman -S wget
-
 if [ -d "$KERNEL_DIR"/ ]; then
 	echo "Kernel dir found"
 else
