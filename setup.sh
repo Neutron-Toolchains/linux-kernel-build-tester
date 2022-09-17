@@ -16,8 +16,11 @@ if [ -d "$KERNEL_DIR/clang"/ ]; then
 	echo "clang dir found"
 else
 	cd "$KERNEL_DIR"
-	git clone https://gitlab.com/dakkshesh07/neutron-clang.git --depth=1 clang
+	git clone https://github.com/Neutron-Toolchains/neutron-clang.git clang
 fi
+
+cd "$KERNEL_DIR/clang"
+bash antman -S
 
 cd "$BUILDDIR"
 if [[ $1 == "X86" ]]; then
