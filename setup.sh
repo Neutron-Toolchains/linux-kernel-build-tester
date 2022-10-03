@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-export LINUX_VER="5.19.12"
+export LINUX_VER="6.0"
 export BUILDDIR=$(pwd)
 export KERNEL_DIR="$BUILDDIR/linux-$LINUX_VER"
 
 if [ -d "$KERNEL_DIR"/ ]; then
 	echo "Kernel dir found"
 else
-	wget "https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-$LINUX_VER.tar.xz"
+	wget "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-$LINUX_VER.tar.xz"
 	tar xvf linux-$LINUX_VER.tar.xz
 fi
 
