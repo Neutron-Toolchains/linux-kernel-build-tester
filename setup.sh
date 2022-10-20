@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-export LINUX_VER="6.0"
+export LINUX_VER=$(curl -sL "https://www.kernel.org" | grep -A 1 "latest_link" | tail -n +2 | sed 's|.*">||' | sed 's|</a>||')
 export BUILDDIR=$(pwd)
 export KERNEL_DIR="$BUILDDIR/linux-$LINUX_VER"
 
