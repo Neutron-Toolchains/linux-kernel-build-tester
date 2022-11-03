@@ -1,4 +1,3 @@
-# linux-kernel-build-tester
-A CI kernel builder that is used to test latest Neutron Clang builds | WIP
+## We have taken steps to move repositories that are not toolchain/compiler related to https://github.com/Neutron-Projects
 
-![Kernel Builds](https://github.com/Neutron-Toolchains/linux-kernel-build-tester/actions/workflows/workflow.yml/badge.svg)
+So this repository has been moved to https://github.com/Neutron-Projects/linux-kernel-build-tester.git
